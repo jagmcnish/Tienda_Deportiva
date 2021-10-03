@@ -1,0 +1,4 @@
+- Hola
+- Mi nombre es Jose Guardo
+- Un gusto para mi participar en esta actividad
+- y es pero sacar el mayor conocimiento posible de esta.
