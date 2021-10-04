@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+      integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+      crossorigin="anonymous"
+    />
+
+    <title>REGISTRAR USUARIOS</title>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header id="header">
+        <div class="container__header">
+          <div class="logo">
+            <img src="tecno.png" alt="" />
+          </div>
+          <div class="container__nav">
+            <nav id="nav">
+              <ul>
+                <li><a href="http://www.google.com">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="$">ventas</a></li>
+                <li><a href="#">contacto</a></li>
+              </ul>
+            </nav>
+            <div class="btn__menu" id="btn_menu">
+              <i class="fas fa_bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container__all" id="container_all">
+        <div class="cover">
+          <div class="containe__cover">
+
+            <div class="container__info">
+              <h2>Agregar Nuevo Usuario</h2>
+              <input type="text"  id="nombre" placeholder="Nombre" class="form-control my-3" required/>                         
+              <input type="text" id="apellido" placeholder="Apellido" class="form-control my-3" required/>                                                   
+              <input type="email" id="email" placeholder="Correo" class="form-control my-3" required />  
+			  <select name="Estado usuario"  id="EstadoUs"  class="form-control my-3"><option selcted value="0" hidden>Elija Estado usuario</option><option value="1">Activo</option><option value="2">Inactivo</option></select>
+              <select name="Rol usuario"  id="RolUs" class="form-control my-3">
+              <option selected value="0" hidden required>Elige Rol de usuario</option><option value="1">Administrador</option><option value="2">Usuario normal</option></select>
+			  <button type = "submit" class="btn btn-primary" id="boton" onclick="guardar()">
+                Guardar
+              </button>
+            </div>
+
+            <div class="container__tabla">
+              <div class="container__info2">
+                <table class="table my-3">
+                  <h2>Lista de usuarios en el sistemas</h2>
+
+                  <thead>
+                    <tr>
+                      <th scope="col">Nombres</th>
+                      <th scope="col">Apellidos</th>
+                      <th scope="col">E-mail</th>
+                      <th scope="col">Estado Usuario</th>
+                      <th scope="col">Rol de Usuario</th>
+                      <th scope="col">Eliminar</th>
+                      <th scope="col">Editar</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="tabla"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="container_footer">
+            <div class="box_footer">
+              <div class="logo">
+                <img src="balon.png" alt=""/>
+              </div>
+            </div>
+           <div class="box__footer">
+              <h2>Redes sociales</h2>
+              <a href="http://www.facebook.com">Facebook</a>
+              <a href="http://www.twitter.com">Twitter</a>
+              <a href="http://www.instagram.com">Instagram</a>
+              <a href="http://www.youtube.com">Youtube</a>
+            </div>
+          </div>
+          <div class="box__copyright">
+            <hr />
+            <p>
+              Todos los derechos reservados ©™2021
+            </p>
+          </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+          integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+          crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
