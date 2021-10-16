@@ -50,7 +50,7 @@ function App() {
                 </Switch>
               </AuthLayout>
             </Route>
-            <Route path={['/Index']}>
+            <Route path={['/']}>
               <PublicLayout>
                 <Route path='/'>
                   <Index />
